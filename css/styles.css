@@ -55,12 +55,11 @@ img {
 /*-- Containers start--*/
 
 .container {
-  width: 1170px;
-
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px var(--blue-color);
-  outline-offset: -2px;
 }
 
 .header-container {
@@ -74,9 +73,24 @@ img {
   margin: 0 auto;
 }
 
-.portfolio-container-btm {
+.what-we-do-container {
 }
 
+.portfolio-container {
+  padding-top: 88px;
+  padding-bottom: 100px;
+}
+.portfolio-container-btm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer-container {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /*-- Containers end--*/
 
 /*-- Шапка сторінки -*/
@@ -105,6 +119,12 @@ img {
   margin-left: auto;
 }
 
+.nav-list-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -117,7 +137,8 @@ img {
 
 .nav-link {
   display: block;
-  padding: 33px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -192,7 +213,7 @@ img {
 }
 
 .hero {
-  background: #2f303a;
+  background: var(--background-footer);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -229,9 +250,6 @@ img {
 .section-features {
 }
 
-.section-features-title {
-}
-
 .section-features-list {
   display: flex;
   align-items: flex-start;
@@ -259,7 +277,10 @@ img {
 
 /*-- Чим ми займаємося --*/
 .section-what-we-do {
+  display: block;
+  margin: 0 auto;
   width: 1170px;
+  padding-top: 0px;
 }
 
 .section-titel {
@@ -326,6 +347,9 @@ img {
   background: var(--background-footer);
 }
 
+.footer-logo-box {
+  margin-bottom: 20px;
+}
 .footer-logo-web {
   font-family: "Raleway";
   font-weight: 700;
@@ -339,12 +363,20 @@ img {
   color: var(--background-color);
 }
 
+.footer-info {
+}
 .footer-contact-list {
+  width: 213px;
+  display: block;
 }
 
 .footer-contact-item {
+  margin-bottom: 9px;
 }
 
+.footer-contact-item:last-child {
+  margin-bottom: 0px;
+}
 .footer-contact-adress {
   font-style: normal;
   font-size: 14px;
@@ -380,9 +412,8 @@ img {
 
 /*-- Фільтри --*/
 .section-portfolio-filter-list {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  align-self: center;
   gap: var(--indent);
 }
 
@@ -411,14 +442,22 @@ img {
 }
 
 /*-- Проекти --*/
+
+.box-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
 .section-portfolio-list {
 }
 .section-portfolio-item {
   box-sizing: border-box;
-
   width: 370px;
   background: var(--background-color);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .section-portfolio-item-title {

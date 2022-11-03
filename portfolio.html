@@ -61,13 +61,11 @@
     <!-- Унікальний контент сторінки -->
     <main class="portfolio">
       <section class="section-portfolio">
-        <div class="container">
+        <div class="portfolio-container container">
           <h1 hidden>Портфоліо</h1>
           <!-- Фільтри -->
-          <div class="">
-            <ul
-              class="section-portfolio-filter-list portfolio-container-btm list"
-            >
+          <div class="portfolio-container-btm">
+            <ul class="section-portfolio-filter-list list">
               <li>
                 <button
                   type="button"
@@ -121,8 +119,10 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title list">Технокряк</h2>
-                  <p class="section-portfolio-item-text list">Веб-сайт</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title list">Технокряк</h2>
+                    <p class="section-portfolio-item-text list">Веб-сайт</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -133,10 +133,12 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
-                  <p class="section-portfolio-item-text">Дизайн</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="section-portfolio-item-text">Дизайн</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -147,8 +149,12 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">Ресторан Seafood</h2>
-                  <p class="section-portfolio-item-text">Додаток</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">
+                      Ресторан Seafood
+                    </h2>
+                    <p class="section-portfolio-item-text">Додаток</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -159,8 +165,10 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">Проєкт Prime</h2>
-                  <p>Маркетинг</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">Проєкт Prime</h2>
+                    <p>Маркетинг</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -171,8 +179,10 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">Проєкт Boxes</h2>
-                  <p class="section-portfolio-item-text">Додаток</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">Проєкт Boxes</h2>
+                    <p class="section-portfolio-item-text">Додаток</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -183,10 +193,12 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title" lang="en">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="section-portfolio-item-text">Веб-сайт</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title" lang="en">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="section-portfolio-item-text">Веб-сайт</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -197,10 +209,12 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">
-                    Видання Limited Edition
-                  </h2>
-                  <p class="section-portfolio-item-text">Дизайн</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">
+                      Видання Limited Edition
+                    </h2>
+                    <p class="section-portfolio-item-text">Дизайн</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -211,8 +225,10 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title">Проєкт LAB</h2>
-                  <p class="section-portfolio-item-text">Маркетинг</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title">Проєкт LAB</h2>
+                    <p class="section-portfolio-item-text">Маркетинг</p>
+                  </div>
                 </a>
               </li>
               <li class="section-portfolio-item benefits-item">
@@ -223,10 +239,12 @@
                     width="370"
                     height="294"
                   />
-                  <h2 class="section-portfolio-item-title" lang="en">
-                    Growing Business
-                  </h2>
-                  <p class="section-portfolio-item-text">Додаток</p>
+                  <div class="box-card">
+                    <h2 class="section-portfolio-item-title" lang="en">
+                      Growing Business
+                    </h2>
+                    <p class="section-portfolio-item-text">Додаток</p>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -235,11 +253,13 @@
       </section>
     </main>
     <!-- Підвал сторінки -->
-    <footer class="footer">
+    <footer class="footer footer-container container">
       <!-- Лого -->
-      <a href="" class="footer-logo-web link"
-        >Web<span class="footer-logo link">Studio</span></a
-      >
+      <div class="footer-logo-box">
+        <a href="" class="footer-logo-web link"
+          >Web<span class="footer-logo link">Studio</span></a
+        >
+      </div>
       <!-- Посилання на соцмережі -->
       <address>
         <ul class="footer-contact-list list">
