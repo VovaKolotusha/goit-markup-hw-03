@@ -77,8 +77,6 @@ img {
 }
 
 .portfolio-container {
-  padding-top: 88px;
-  padding-bottom: 100px;
 }
 .portfolio-container-btm {
   display: flex;
@@ -132,6 +130,13 @@ img {
   gap: 50px;
 }
 
+.studia-open {
+  color: var(--blue-color);
+}
+
+.portfolio-open {
+  color: var(--blue-color);
+}
 .nav-item {
 }
 
@@ -143,7 +148,6 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--brand-color);
 }
 
 .nav-link:hover,
@@ -277,10 +281,7 @@ img {
 
 /*-- Чим ми займаємося --*/
 .section-what-we-do {
-  display: block;
-  margin: 0 auto;
-  width: 1170px;
-  padding-top: 0px;
+  padding-bottom: 94px;
 }
 
 .section-titel {
@@ -408,6 +409,8 @@ img {
 }
 
 .section-portfolio {
+  padding-top: 88px;
+  padding-bottom: 100px;
 }
 
 /*-- Фільтри --*/
